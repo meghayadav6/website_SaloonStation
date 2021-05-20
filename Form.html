@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registeration Form</title>
+    <link rel="stylesheet" href="style1.css">
+<Script>
+    function sendEmail() {
+            Email.send({
+                Host: "smtp.gmail.com",
+        Username: "teamhomemaker@gmail.com",
+        Password: "LMCST",
+        To: 'meghayadav6n@gmail.com',
+        From: "teamhomemaker@gmail.com",
+        Subject: "Sending Email using javascript",
+        Body: "Well that was easy!!",
+            })
+            .then(function(message){
+                alert("Thank you for Registering!")
+            });
+        }    
+</Script>
+</head>
+
+<body style="background-color:rgb(245, 199, 213);">
+<div class="nav">
+    <p> <a href="index.html">Back</a> </p>
+</div>
+<center>
+    <h1>Register for best deals in the town!</h1>
+    <form aciton ="/myaction.php" name="myForm" onsubmit="return validateForm()" method="post">
+        <div class="formdesign" id="name">
+            Name: &nbsp;&nbsp; &nbsp; <input type="text" name="fname" required><b><span class="formerror"> </span></b>
+        </div>
+
+        <div class="formdesign" id="email">
+            Email: &nbsp; &nbsp; &nbsp;<input type="email" name="femail" required><b><span class="formerror"> </span></b>
+        </div>
+
+        <div class="formdesign" id="phone">
+            Phone:&nbsp; &nbsp; &nbsp; <input type="phone" name="fphone" required><b><span class="formerror"></span></b>
+        </div>
+
+        <div class="formdesign" id="pass">
+            Password: <input type="password" name="fpass" required><b><span class="formerror"<span></b>
+        </div>
+
+        <div class="formdesign" id="cpass">
+            Confirm: &nbsp;<input type="password" name="fcpass" required><b><span class="formerror"></span></b>
+        </div>
+
+        <input class="but" type="submit" value="Submit" onclick="sendEmail()">
+</center>
+    </form>
+</body>
+<script src="index.js"></script>
+
+</html>

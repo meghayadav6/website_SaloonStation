@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<head>
+<title> cc </title>
+</head>
+<style>
+*{
+	margin:0p;
+	padding:0;
+	box-sizing:border-box;
+}
+body{
+	background-image:url("image/bad.jpg");
+}
+.wrapper{
+	width:1200px;
+	margin:50px;
+
+}
+.title{
+	text-align:center;
+	margin-bottom:10px;
+
+}
+.title h4{
+	text-transform: capitalize;
+	font-size: 36px;
+	position:relative;
+	display:inline-block;
+	padding-bottom:50px;
+}
+.title h4{
+	display:block;
+	font-size:25px;
+	font-style: italic;
+	margin-bottom:-10px;
+}
+.title h4:before{
+	position:absolute;
+	content:"";
+	width:100px;
+	height:2px;
+	bottom:0;
+	left:50%;
+	transform:translateX(50%);
+}
+.menu{
+	display:flex;
+	flex-wrap: wrap;
+	justify-content:space-between;
+}
+.single-menu{
+	flex-basis: 500px;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #ddd;
+}
+.single-menu:nth-child(5) .single-menu:nth-child(6){
+	border-bottom: 0;
+}
+.single-menu{
+	display: flex;
+	flex-direction:row;
+	align-items: center;
+}
+.single-menu:hover img{
+	border-radius:0;
+}
+.single-menu img{
+	max-width:180px;
+	margin-right: 30px;
+	border-radius:50%;
+	border:1px solid #ddd;
+	padding:3px;
+}
+.single-menu h4{
+	text-transform:capitalize;
+	font-size:22px;
+	border-bottom:1px dashed #333;
+	margin-bottom:5px;
+	padding-bottom:5px;
+}
+.single-menu h4 span{
+	float:right;
+	color:#ff7720;
+	font-style:italic;
+
+}
+</body>
+</style>
+<body>
+<div class="nav">
+	<p><a href="index.html">Back</a></p>
+</div>
+<div class="wrapper">
+	<div class="title">
+		<h4>Taking care of all your needs</h4>
+	</div>
+	<div class="menu">
+		<div class="single-menu">
+			<img src="image/123.jpg" alt="">
+			<div class="menu-content">
+				<h4>facial<span>₹456</span></h4>
+				<p>Generally we a mix of pressing and massaging back and forth
+				 with one or two fingers, usually for up to at least 2 minutes 
+				 per pressure point</p>
+			</div>
+		</div>
+		<div class="single-menu">
+			<img src="image/female.jpg" alt="">
+			<div class="menu-content">
+				<h4>haircut<span>₹500</span></h4>
+				<p>Point cutting is used to remove bulk from the hair's ends,
+				 allowing layers or graduation built into the haircut to blend 
+				together more seamlessly. It creates movement in the hair and 
+			    can be used for both men and women's styling.</p>
+			</div>
+		</div>
+		<div class="single-menu">
+			<img src="image/color.jpg" alt="">
+			<div class="menu-content">
+				<h4>haircolor<span>₹1200</span></h4>
+				<p>The level system is made up of 10 numbers which help 
+				determine the depth level of your natural hair. 1 is black, 
+			    5 is light brown, 6 is dark blonde, 7 is blonde and 10 is
+			    the lightest blonde.</p>
+			</div>
+		</div>
+		<div class="single-menu">
+			<img src="image/789.jpg" alt="">
+			<div class="menu-content">
+				<h4>spa<span>₹5000</span></h4>
+				<p>It goes without saying that visiting a spa is a fantastic way
+				to relax and de-stress. A visit to the spa offers a great opportunity
+				to separate yourself from life’s everyday stressors and have some precious
+				‘me time’. Allowing yourself this time to wind down and relax has so many
+				additional benefits, such as a clear mind and increased productivity once 
+			    you leave your treatment!</p>
+			</div>
+		</div>
+		<div class="single-menu">
+			<img src="image/pan.jpg" alt="">
+			<div class="menu-content">
+				<h4>pedicure<span>₹700</span></h4>
+				<p>A pedicure is a cosmetic treatment of the feet and toenails, analogous 
+				to a manicure. Pedicures are done for cosmetic, therapeutic purposes.
+				They are popular throughout the world, and especially among women.
+				Pedicures include care not only for the toenails; dead skin cells are 
+			    rubbed off the bottom of the feet using a rough stone (often a pumice stone).
+			    Skin care is often provided up to the knee, including granular exfoliation,
+			    moisturizing, and massage.</p>
+			</div>
+		</div>
+		<div class="single-menu">
+			<img src="image/man.jpg" alt="">
+			<div class="menu-content">
+				<h4>manicure<span>₹700</span></h4>
+				<p>A manicure is a cosmetic beauty treatment for the fingernails and hands
+				performed at home or in a nail salon. A manicure consists of filing and
+				shaping the free edge of nails, pushing and clipping (with a cuticle pusher
+				and cuticle nippers) any nonliving tissue (but limited to the cuticle and 
+				hangnails), treatments with various liquids, massage of the hand, and the
+				application of fingernail polish.</p>
+			</div>
+		</div>
+		<div class="single-menu">
+			<img src="image/start.jpg" alt="">
+			<div class="menu-content">
+				<h4>hair straightening<span>₹10,000</span></h4>
+				<p>Hair straightening is a hair styling technique used since the 1890s 
+				involving the flattening and straightening of hair in order to give it a
+				smooth, streamlined, and sleek appearance.[1] It became very popular during 
+			    the 1950s among black males and females of all races. It is accomplished using
+			    a hair iron or hot comb, chemical relaxers, Japanese hair straightening,[2]
+			    Brazilian hair straightening, or roller set/blowdryer styling. In addition, 
+			    some shampoos, conditioners, and hair gels can help to make hair temporarily straight.</p>
+			</div>
+		</div>
+		<div class="single-menu">
+			<img src="image/trim.jpg" alt="">
+			<div class="menu-content">
+				<h4>hair trimming<span>₹3000</span></h4>
+				<p>as the hair is in a more natural state and the hair can be cut evenly.
+				Hair cutting or hair trimming is intended to create or maintain a 
+				specific shape.electric hair clippers has led to them largely replacing
+				manual clippers. Some barbers in Western countries continue to use them for trimming. </p>
+			</div>
+		</div>
+		<div class="single-menu">
+			<img src="image/kat.jpg" alt="">
+			<div class="menu-content">
+				<h4>keratin treatment<span>₹15,000</span></h4>
+				<p>A keratin treatment is a chemical process that smooths and shines 
+				frizzy hair. Results can last up to six months. There are many different
+				versions of the treatment that go by different names (Brazilian Blowout, 
+				Cezanne, Goldwell Kerasilk) and your hairstylist can customize a blend of
+				the formula to suit your needs.</p>
+			</div>
+		</div>
+		<div class="single-menu">
+			<img src="image/wax.jpg" alt="">
+			<div class="menu-content">
+			<h4>waxing<span>₹200</span></h4>
+			<p>Ensure optimal hair length. Before waxing, make sure your hair is 
+			about one-fourth to three-fourths of an inch long. Avoid retinoid creams 
+			before waxing. Reduce discomfort. Wash and dry the area. Warm the wax. Apply the wax. 
+		    Apply the cloth strip. Remove the cloth strip.</p>
+			</div>
+		</div>
+		<div class="single-menu">
+			<img src="image/makeup.jpg" alt="">
+			<div class="menu-content">
+				<h4>makeup<span>₹2000</span></h4>
+				<p>Cosmetics are a category of health and beauty products that are
+				used to care for the face and body, or used to accentuate or change
+				a person's appearance. Cosmetics can boost confidence. Though cosmetics
+				are commonly thought of as only makeup used to alter a person's appearance,
+				cosmetics can also refer to a number of products used to care for the skin
+				and the body, as well as those used to add fragrance to it. There are a large 
+				number of cosmetics available under these various categories, each designed for
+				different purposes and featuring different characteristics.</p>
+			</div>
+		</div>
+		<div class="single-menu">
+			<img src="image/456.jpg" alt="">
+			<div class="menu-content">
+				<h4>hair styling<span>₹1200</span></h4>
+				<p>A hairstyle, hairdo, or haircut refers to the styling of hair,
+				usually on the human scalp. Sometimes, this could also mean an editing
+				of facial or body hair. The fashioning of hair can be considered an aspect 
+			    of personal grooming, fashion, and cosmetics, although practical, cultural,
+			    and popular considerations also influence some hairstyles.[1]</p>
+			</div>
+		</div>
+
+	</div>
+
+	
+</div>
+</body>
+</html>

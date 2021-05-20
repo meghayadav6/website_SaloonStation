@@ -1,0 +1,721 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Rufina:400,700&display=swap");
+/*  ***************************** Common CSS Start *************/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  color: #6c6c6f;
+  background-color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 27px;
+}
+a {
+  -webkit-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+a:hover, a:focus {
+  text-decoration: none;
+  outline: 0px;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Rufina', serif;
+  font-weight: 700;
+}
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+figure {
+  margin: 0;
+}
+section{
+  display: block;
+  position: relative;
+  padding: 50px 0;
+  width: 100%;
+}
+/*wdijeuiwdhj*/
+
+.primary-menu ul li:hover
+{
+  background-color: #fdd5d5;
+}
+
+.sub-menu-1
+{
+	display:none;
+}
+.primary-menu ul li:hover .sub-menu-1
+{
+	display: block;
+	position: absolute;
+	background: rgb(193, 228, 238);
+	margin-top: 15px;
+	margin-left: -15px;
+}
+.primary-menu ul li:hover .sub-menu-1 ul
+{
+	display: block;
+	margin: 10px:
+}
+.primary-menu ul li:hover .sub-menu-1 ul li
+{
+	width: 150px;
+	padding: 10px;
+	border-bottom: 1px dotted #fff;
+	background: transparent;
+	border-radius: 0;
+	text-align: left;
+}
+.primary-menu ul li:hover .sub-menu-1 ul li :last-child
+{
+	border-bottom: none;
+}
+.primary-menu ul li:hover .sub-menu-1 ul li a:hover
+{
+	color: #f196cc;
+}
+/*new 
+.sub-menu-1 ul li
+{
+	width: 150px;
+	padding: 10px;
+	border-bottom: 1px dotted #fff;
+	background: transparent;
+	border-radius: 0;
+	text-align: left;
+  float: inherit;
+}
+.sub-menu-1 ul li :last-child
+{
+	border-bottom: none;
+}
+.sub-menu-1 ul li a:hover
+{
+	color: #b2ff00;
+}
+/* end*/
+
+
+/*  ***************************** Common CSS End *************/
+
+/*  ***************************** Header Start *************/
+.header {
+  position: relative;
+}
+.header.abs-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+.logo {
+  display: block;
+  max-width: 109px;
+}
+.primary-menu {
+  position: relative;
+}
+.primary-menu .mobile-menu {
+  display: none;
+}
+.primary-menu li a {
+  color: #263a41;
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 0 20px;
+}
+.primary-menu li a:hover {
+  color: #ff817e;
+}
+@media screen and (max-width: 767px) {
+  .primary-menu .mobile-menu {
+    color: #ff817e;
+    display: block;
+    font-size: 18px;
+    position: absolute;
+    right: 0;
+    top: -30px;
+  }
+  .primary-menu ul {
+    background-color: #fcf5ee;
+    display: none;
+    text-align: center;
+    padding: 10px 0;
+  }
+  .primary-menu li a {
+    padding: 10px 15px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .primary-menu li {
+    display: inline-block;
+  }
+}
+/*  ***************************** Header End *************/
+
+/*  ***************************** Banner Section Start *************/
+.banner {
+  background: url(../images/leaf.png) no-repeat left center/12.5%;
+  padding: 12% 0;
+}
+.banner span {
+  color: #ff817e;
+  display: block;
+  font-family: "Rufina", serif;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.banner h2 {
+  color: #1e2528;
+  font-size: 60px;
+  line-height: 75px;
+  margin-bottom: 25px;
+}
+.banner p {
+  color: #555;
+  margin-bottom: 50px;
+}
+.banner .spa-img {
+  width: 43.4%;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.btn {
+  background-color: #ff817e;
+  border-radius: 0;
+  color: #fff;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 0.8;
+  text-transform: uppercase;
+  min-width: 170px;
+  padding: 20px 15px;
+}
+.video-btn {
+  color: #555;
+  font-size: 15px;
+  font-weight: 400;
+}
+.video-btn:hover {
+  color: #ff817e;
+}
+.video-btn i {
+  border-radius: 50%;
+  background-color: #fcf5ee;
+  color: #ff817e;
+  display: inline-block;
+  line-height: 44px;
+  text-align: center;
+  margin-right: 10px;
+  height: 44px;
+  width: 44px;
+}
+@media screen and (max-width: 1199px) {
+  .banner {
+    padding-top: 15%;
+  }
+  .banner h2 {
+    font-size: 49px;
+    line-height: 60px;
+  }
+}
+@media screen and (max-width: 676px) {
+  .banner {
+    padding-top: 130px;
+  }
+  .banner .spa-img {
+    display: none;
+  }
+}
+@media screen and (max-width: 479) {
+  .banner h2 {
+    font-size: 44px;
+    line-height: 54px;
+  }
+  .banner .video-btn {
+    display: block;
+    margin-top: 30px;
+  }
+}
+@media screen and (min-width: 480) {
+  .banner .video-btn {
+    margin-left: 15px;
+  }
+}
+/*  ***************************** Banner Section End *************/
+
+/*  ***************************** About Section Start *************/
+.about {
+  text-align: center;
+}
+.about [class|=flower] {
+  position: absolute;
+}
+.about .flower-1 {
+  left: 16%;
+  top: 0;
+  max-width: 160px;
+}
+.about .flower-2 {
+  right: 135px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  max-width: 88px;
+}
+.sec-heading {
+  margin-bottom: 70px;
+  position: relative;
+  text-align: center;
+}
+.sec-heading img {
+  max-width: 84px;
+  margin: 0 auto 40px;
+}
+.sec-heading .tagline {
+  color: #888;
+  display: block;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: .8;
+  text-transform: uppercase;
+  margin-bottom: 27px;
+}
+.sec-heading .sec-title {
+  color: #1e2528;
+  font-size: 42px;
+  margin-bottom: 32px;
+}
+.sec-heading p {
+  color: #888;
+  margin-bottom: 0;
+}
+.btn-round {
+  border-radius: 50px;
+}
+@media screen and (max-width: 991px) {
+  .about .flower-2 {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .sec-heading .sec-title {
+    font-size: 33px;
+  }
+}
+/*  ***************************** About Section End *************/
+
+/*  ***************************** Service Section Start *************/
+.service .service-caro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.service .single-service {
+  -ms-flex-preferred-size: 25%;
+  flex-basis: 25%;
+  position: relative;
+}
+.service .single-service .service-hover {
+  background-color: rgba(255, 129, 126, 0.9);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  -webkit-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+  height: 100%;
+  width: 100%;
+}
+.service .single-service .service-hover img {
+  margin: 0 auto 20px;
+  width: 47px;
+}
+.service .single-service .service-hover span {
+  color: #fff;
+  display: block;
+  font-family: "Rufina", serif;
+  font-weight: 700;
+}
+.service .single-service:hover .service-hover {
+  opacity: 1;
+  visibility: visible;
+}
+/*  ***************************** Service Section End *************/
+
+/*  ***************************** Procedures Section Start *************/
+.procedures {
+  position: relative;
+}
+.post {
+  border: 1px solid #e3e6ea;
+  text-align: center;
+  -webkit-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+.post img {
+  margin-bottom: 35px;
+}
+.post h4 {
+  margin-bottom: 22px;
+}
+.post h4, .post h4 a {
+  color: #263a41;
+  font-size: 22px;
+}
+.post p {
+  margin-bottom: 39px;
+}
+.post .btn {
+  background-color: #30383b;
+  margin-bottom: 30px;
+  padding: 15px;
+}
+.post:hover {
+  -webkit-box-shadow: 0 5px 20px #f0f0f0;
+  box-shadow: 0 5px 20px #f0f0f0;
+}
+.post:hover .btn {
+  background-color: #ff817e;
+  color: #fff;
+}
+/*  ***************************** Procedures Section End *************/
+
+/*  ***************************** Testimonial Section Start *************/
+.bg-lightred {
+  background-color: #fff9f8;
+}
+.testimonial .single-tst {
+  position: relative;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.testimonial .single-tst img {
+  margin: 0 auto 45px;
+  width: 59px;
+}
+.testimonial .single-tst p {
+  color: #263a41;
+  font-family: "Rufina", serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 35px;
+  margin-bottom: 43px
+}
+.testimonial .single-tst .client-info .thumb {
+  border-radius: 50%;
+  margin-bottom: 22px;
+  height: 76px;
+  width: 76px;
+}
+.testimonial .single-tst .client-info p {
+  font-size: 22px;
+  margin-bottom: 0;
+}
+.testimonial .single-tst .client-info p span {
+  display: inline-block;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 300px;
+}
+/*  ***************************** Testimonial Section End *************/
+
+/*  ***************************** Team Section Start *************/
+.team .single-memb {
+  position: relative;
+  width: 100%;
+}
+.team .single-memb .memb-details {
+  background-color: #fff;
+  -webkit-box-shadow: 0 5px 20px #f0f0f0;
+  box-shadow: 0 5px 20px #f0f0f0;
+  max-width: calc( 100% - 60px);
+  margin: -50px auto 0;
+  padding: 30px;
+  position: relative;
+  text-align: center;
+  -webkit-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  z-index: 1;
+}
+.team .single-memb .memb-details h6 {
+  color: #263a41;
+  font-size: 22px;
+  margin-bottom: 0;
+}
+.team .single-memb .memb-details span {
+  display: block;
+  margin-bottom: 15px;
+}
+.team .single-memb .memb-social {
+  margin-top: -30px;
+  -webkit-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+}
+.team .single-memb .memb-social a {
+  border: 1px solid #30383b;
+  border-radius: 50%;
+  color: #30383b;
+  display: inline-block;
+  font-size: 13px;
+  text-align: center;
+  line-height: 30px;
+  margin: 0 5px;
+  height: 30px;
+  width: 30px;
+}
+.team .single-memb .memb-social a:hover {
+  background-color: #ff817e;
+  border-color: #ff817e;
+  color: #fff;
+}
+.team .single-memb:hover .memb-details {
+  margin-top: -84px;
+}
+.team .single-memb .memb-social {
+  margin-top: 0;
+  opacity: 1;
+  visibility: visible;
+}
+@media screen and (max-width: 1199px) {
+  .team .single-memb .memb-details {
+    padding: 30px 20px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .team .single-memb .memb-details {
+    padding: 20px 15px;
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .team .single-memb {
+    margin-bottom: 30px;
+  }
+}
+/*  ***************************** Team Section End *************/
+
+/*  ***************************** Appointment Section Start *************/
+.appointment .v2 {
+  padding-bottom: 0;
+  border-bottom: 1px solid #fdd5d5;
+}
+.appointment .appointment-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.appointment .appointment-wrap figure {
+  -ms-flex-preferred-size: 40%;
+  flex-basis: 40%;
+}
+.appointment .appointment-wrap .appointment-form {
+  -ms-flex-preferred-size: 60%;
+  flex-basis: 60%;
+  padding-left: 100px;
+}
+.appointment .appointment-wrap .appointment-form form {
+  max-width: 650px;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.appointment-form {
+  background-color: #fff9f8;
+}
+.appointment-form .form-field {
+  position: relative;
+  width: 100%;
+}
+.appointment-form .form-field input, .appointment-form .form-field textarea,
+.appointment-form .form-field select {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #d4d3d3;
+  color: #999;
+  display: block;
+  font-size: 12px;
+  font-weight: 400;
+  padding: 10px 0;
+  margin-bottom: 30px;
+  width: 100%;
+}
+.appointment-form .form-field input::-webkit-input-placeholder, 
+.appointment-form .form-field textarea::-webkit-input-placeholder,
+.appointment-form .form-field select::-webkit-input-placeholder {
+  opacity: 1;
+  text-transform: uppercase;
+}
+.appointment-form .form-field input:-ms-input-placeholder, 
+.appointment-form .form-field textarea:-ms-input-placeholder,
+.appointment-form .form-field select:-ms-input-placeholder {
+  opacity: 1;
+  text-transform: uppercase;
+}
+.appointment-form .form-field input::-ms-input-placeholder, 
+.appointment-form .form-field textarea::-ms-input-placeholder,
+.appointment-form .form-field select::-ms-input-placeholder {
+  opacity: 1;
+  text-transform: uppercase;
+}
+.appointment-form .form-field input::placeholder, 
+.appointment-form .form-field textarea::placeholder,
+.appointment-form .form-field select::placeholder {
+  opacity: 1;
+  text-transform: uppercase;
+}
+.appointment-form .form-field select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  text-transform: uppercase;
+}
+.appointment-form .form-field .select-field {
+  width: 100%;
+}
+@media screen and (max-width: 1300px) {
+  .appointment .appointment-wrap figure {
+    display: none;
+  }
+  .appointment .appointment-wrap .appointment-form {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    padding: 30px 15px;
+  }
+  .appointment .appointment-wrap .appointment-form form {
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 480px) {
+  .appointment-form .form-field.half-width {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  .appointment-form .form-field.half-width input,
+  .appointment-form .form-field.half-width .selec-field {
+    width: 49%;
+  }
+
+}
+/*  ***************************** Appointment Section End *************/
+
+/*  ***************************** Footer Section Start *************/
+.footer {
+  background-color: #fff9f8;
+  padding: 80px 0 60px;
+}
+.footer .foo-logo {
+  margin: 0 auto;
+}
+.footer .foo-nav {
+  position: relative;
+  margin: 30px 0;
+}
+.footer .foo-nav li a {
+  color: #263a41;
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 0 20px;
+}
+.footer .foo-nav li a:hover {
+  color: #ff817e;
+}
+.footer .foo-social {
+  margin-bottom: 30px;
+}
+.footer .foo-social a {
+  border-right: 1px solid #b1b4bb;
+  color: #3a414e;
+  display: inline-block;
+  font-size: 14px;
+  line-height: .5;
+  padding: 0 10px;
+}
+.footer .foo-social a:hover {
+  color: #ff817e;
+}
+.footer .copyright {
+  color: #888;
+  font-size: 13px;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+.footer .copyright a {
+  color: #ff817e;
+}
+@media screen and (min-width: 768px) {
+  .footer .foo-nav li {
+    display: inline-block;
+  }
+}
+@media screen and (max-width: 767px) {
+  .footer .foo-nav ul {
+    background-color: #fcf5ee;
+    display: none;
+    text-align: center;
+    padding: 10px 0;
+  }
+  .footer .foo-nav li a {
+    padding: 10px 15px;
+  }
+}
+/*  ***************************** Footer Section End *************/
